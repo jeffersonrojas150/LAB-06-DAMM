@@ -29,14 +29,12 @@ class WeeklyCalendarScreen extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 75, 164, 80),
           elevation: 0,
           
-          // --- SECCIÓN IZQUIERDA ---
           // 1. Icono de Menú ("Hamburguesa")
           leading: IconButton(
             icon: Icon(Icons.menu, color: Colors.white),
             onPressed: () {},
           ),
           
-          // --- SECCIÓN CENTRAL ---
           // 2. Título complejo con varios elementos en una fila
           title: Row(
             mainAxisSize: MainAxisSize.min, // Para que la fila no ocupe más de lo necesario
@@ -65,8 +63,7 @@ class WeeklyCalendarScreen extends StatelessWidget {
             ],
           ),
           
-          // --- SECCIÓN DERECHA ---
-          // 3. Botones de acción a la derecha
+          // Botones de acción a la derecha
           actions: [
             IconButton(icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
             IconButton(icon: Icon(Icons.help_outline, color: Colors.white), onPressed: () {}),
